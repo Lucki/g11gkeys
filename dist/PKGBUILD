@@ -1,0 +1,26 @@
+# Maintainer: Lucki <https://aur.archlinux.org/account/Lucki>
+# shellcheck disable=SC2034,2154,2148
+
+pkgname=g11gkeys
+pkgver=0.0.1
+pkgrel=1
+source=("$pkgname-$pkgver.src.tar.gz::https://github.com/Lucki/$pkgname/archive/refs/tags/$pkgver.tar.gz")
+sha512sums=('e95d08eefa7c15d37d660692af2dd4198eab51283f463d06125a83f7b723bcbe963072e0588a42c61d52d75c5021ff07f6bbc76a6d665799dfc88c71855be95f')
+
+pkgdesc="Handle Logitech G11 keys and call scripts for them"
+arch=('x86_64')
+url="https://github.com/Lucki/g11gkeys"
+license=('unknown')
+depends=('macro-manager' 'glib2' 'libg15')
+makedepends=('meson' 'vala' 'ninja' 'xdotool')
+
+build() {
+    arch-meson "$pkgname-$pkgver" "build_pkgbuild"
+    meson compile -C "build_pkgbuild"
+}
+
+package() {
+    meson install -C "build_pkgbuild" --destdir "$pkgdir"
+
+    install -Dm644 "$pkgname-$pkgver/dist/$pkgname.service" "$pkgdir/usr/lib/systemd/user/$pkgname.service"
+}
