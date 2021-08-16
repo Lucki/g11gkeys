@@ -2,10 +2,10 @@
 Description=Handle Logitech G11 keys and call scripts for them
 
 [Service]
-Type=Simple
+Type=simple
 ExecStart=/usr/bin/g11gkeys
 Restart=on-failure
 RestartSec=5
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target
