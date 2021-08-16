@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034,2154,2148
 
 pkgname=g11gkeys
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 source=("$pkgname-$pkgver.src.tar.gz::https://github.com/Lucki/$pkgname/archive/refs/tags/$pkgver.tar.gz")
-sha512sums=('e95d08eefa7c15d37d660692af2dd4198eab51283f463d06125a83f7b723bcbe963072e0588a42c61d52d75c5021ff07f6bbc76a6d665799dfc88c71855be95f')
+sha512sums=('34dce9c1d6476139f2ce4786d042749bf91722a273ac2fb392ea2eea5c0e2fe56d80214b784601082f25b40db74ae56b2f7419a5dd09e9afdc7e0a2831ea7794')
 
 pkgdesc="Handle Logitech G11 keys and call scripts for them"
 arch=('x86_64')
