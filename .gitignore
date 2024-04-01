@@ -1,3 +1,2 @@
-builddebug/
-buildrelease/
+target/
 .vscode/
