@@ -15,21 +15,21 @@ struct KeyLedMapping {
 }
 
 const KEY_LED_MAP: [KeyLedMapping; 15] = [
-    KeyLedMapping { key: G15_KEY_M1 as u32, led: G15_LED_M1, macro_set_name: "m1" },
-    KeyLedMapping { key: G15_KEY_M2 as u32, led: G15_LED_M2, macro_set_name: "m2" },
-    KeyLedMapping { key: G15_KEY_M3 as u32, led: G15_LED_M3, macro_set_name: "m3" },
-    KeyLedMapping { key: G15_KEY_MR as u32, led: G15_LED_MR, macro_set_name: "mr" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2) as u32, led: G15_LED_M1 | G15_LED_M2, macro_set_name: "m1m2" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M3) as u32, led: G15_LED_M1 | G15_LED_M3, macro_set_name: "m1m3" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_MR) as u32, led: G15_LED_M1 | G15_LED_MR, macro_set_name: "m1mr" },
-    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_M3) as u32, led: G15_LED_M2 | G15_LED_M3, macro_set_name: "m2m3" },
-    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_MR) as u32, led: G15_LED_M2 | G15_LED_MR, macro_set_name: "m2mr" },
-    KeyLedMapping { key: (G15_KEY_M3 | G15_KEY_MR) as u32, led: G15_LED_M3 | G15_LED_MR, macro_set_name: "m3mr" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_M3) as u32, led: G15_LED_M1 | G15_LED_M2 | G15_LED_M3, macro_set_name: "m1m2m3" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_MR) as u32, led: G15_LED_M1 | G15_LED_M2 | G15_LED_MR, macro_set_name: "m1m2mr" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M3 | G15_KEY_MR) as u32, led: G15_LED_M1 | G15_LED_M3 | G15_LED_MR, macro_set_name: "m1m3mr" },
-    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_M3 | G15_KEY_MR) as u32, led: G15_LED_M2 | G15_LED_M3 | G15_LED_MR, macro_set_name: "m2m3mr" },
-    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_M3 | G15_KEY_MR) as u32, led: G15_LED_M1 | G15_LED_M2 | G15_LED_M3 | G15_LED_MR, macro_set_name: "m1m2m3mr" },
+    KeyLedMapping { key: G15_KEY_M1 as u32,                                             led: G15_LED_M1,                                        macro_set_name: "m1" },
+    KeyLedMapping { key: G15_KEY_M2 as u32,                                             led: G15_LED_M2,                                        macro_set_name: "m2" },
+    KeyLedMapping { key: G15_KEY_M3 as u32,                                             led: G15_LED_M3,                                        macro_set_name: "m3" },
+    KeyLedMapping { key: G15_KEY_MR as u32,                                             led: G15_LED_MR,                                        macro_set_name: "mr" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2) as u32,                              led: G15_LED_M1 | G15_LED_M2,                           macro_set_name: "m1m2" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M3) as u32,                              led: G15_LED_M1 | G15_LED_M3,                           macro_set_name: "m1m3" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_MR) as u32,                              led: G15_LED_M1 | G15_LED_MR,                           macro_set_name: "m1mr" },
+    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_M3) as u32,                              led: G15_LED_M2 | G15_LED_M3,                           macro_set_name: "m2m3" },
+    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_MR) as u32,                              led: G15_LED_M2 | G15_LED_MR,                           macro_set_name: "m2mr" },
+    KeyLedMapping { key: (G15_KEY_M3 | G15_KEY_MR) as u32,                              led: G15_LED_M3 | G15_LED_MR,                           macro_set_name: "m3mr" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_M3) as u32,                 led: G15_LED_M1 | G15_LED_M2 | G15_LED_M3,              macro_set_name: "m1m2m3" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_MR) as u32,                 led: G15_LED_M1 | G15_LED_M2 | G15_LED_MR,              macro_set_name: "m1m2mr" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M3 | G15_KEY_MR) as u32,                 led: G15_LED_M1 | G15_LED_M3 | G15_LED_MR,              macro_set_name: "m1m3mr" },
+    KeyLedMapping { key: (G15_KEY_M2 | G15_KEY_M3 | G15_KEY_MR) as u32,                 led: G15_LED_M2 | G15_LED_M3 | G15_LED_MR,              macro_set_name: "m2m3mr" },
+    KeyLedMapping { key: (G15_KEY_M1 | G15_KEY_M2 | G15_KEY_M3 | G15_KEY_MR) as u32,    led: G15_LED_M1 | G15_LED_M2 | G15_LED_M3 | G15_LED_MR, macro_set_name: "m1m2m3mr" },
 ];
 
 struct GKeyMapping {
@@ -58,6 +58,15 @@ const G_KEY_MAP: [GKeyMapping; 18] = [
     GKeyMapping { key: G15_KEY_G18 as u32, name: "g18" },
 ];
 
+fn try_reinitialization() -> () {
+    unsafe {
+        let ret = re_initLibG15();
+        if ret != i32::try_from(G15_NO_ERROR).unwrap() {
+            panic!("Failed reinitializing device: {ret}");
+        }
+    }
+}
+
 fn main() {
     let _args = Cli::parse();
 
@@ -66,7 +75,7 @@ fn main() {
     unsafe {
         let ret = initLibG15();
         if ret != i32::try_from(G15_NO_ERROR).unwrap() {
-            panic!("Error initializing keyboard!")
+            panic!("Error initializing keyboard: {ret}")
         }
     }
 
@@ -82,18 +91,41 @@ fn main() {
         let mut pressed_keys: u32 = 0;
 
         unsafe {
-            match u32::try_from(getPressedKeys(&mut pressed_keys, 1000)).ok() {
-                None => { u32::try_from(re_initLibG15()).ok().unwrap(); },
-                Some(ret) => {
+            let ret = getPressedKeys(&mut pressed_keys, 1000);
+
+            match u32::try_from(ret) {
+                Ok(ret) => {
                     match ret {
                         G15_NO_ERROR => {
                             last_pressed_keys = handle_pressed_keys(pressed_keys, last_pressed_keys, &mut active_set);
                         },
-                        G15_ERROR_OPENING_USB_DEVICE | G15_ERROR_READING_USB_DEVICE | ENODEV => { u32::try_from(re_initLibG15()).ok(); },
-                        G15_ERROR_TRY_AGAIN | G15_ERROR_TIMEOUT => continue,
+                        ENODEV => {
+                            println!("ENODEV");
+                            try_reinitialization();
+                            continue;
+                        },
+                        G15_ERROR_READING_USB_DEVICE => {
+                            // Normal when nothing was pressed
+                            // println!("G15_ERROR_READING_USB_DEVICE");
+                            continue;
+                        },
+                        G15_ERROR_OPENING_USB_DEVICE  => {
+                            panic!("G15_ERROR_OPENING_USB_DEVICE");
+                        },
+                        G15_ERROR_TRY_AGAIN | G15_ERROR_TIMEOUT => {
+                            println!("G15_ERROR_TRY_AGAIN | G15_ERROR_TIMEOUT");
+                            continue
+                        },
                         _ => panic!("Unhandled keyboard error"),
                     }
-                }
+                },
+                Err(_) => {
+                    println!("Failed converting c_int \"{ret}\" to u32.");
+
+                    // This might be due to a libusb error so try reinit the device
+                    try_reinitialization();
+                    continue;
+                },
             }
         }
     }
